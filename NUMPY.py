@@ -4,50 +4,46 @@ import numpy as np
 x=np.array([1,2,3])
 print(x)
 print()
+
 c=np.array((1,2,3))
 print(c*c)
 print(type(c))
-print(
+print()
 
-)
 p=np.array([10,20,30])
 print("dimensions=",p.ndim)
-print(
+print()
 
-)
 # c=np.array([10,20,30],[1,2,3])
 # print("dimension=",c.ndim)
 v=np.array([[1,2,3],[4,5,6]])
 print("dimensions=",v.ndim)
-print(
+print()
 
-)
 s=np.zeros([2,4])
 print(s)
 print(type(s))
-print(
+print()
 
-)
 o=np.ones([3,2])
 print(o)
-print(
+print()
 
-)
 j=np.array([10,20,30])
 print(j.dtype)
+
 a=np.array(["sam","tom","plane"])
 print(a.dtype)
+
 f=np.array(["china","brazil","russia","india"])
 print(f.dtype)
-print(
+print()
 
-)
 x=np.array(["america","cuba","canada","mexico","panama"],dtype="S3")
 print(x)
 print(x.dtype)
-print(
+print()
 
-)
 z=np.array(["10","20","30","50"])
 print(z)
 print(z.dtype)
@@ -58,88 +54,104 @@ print(z1.dtype)
 
 l=np.array([[1,2,3],[4,5,6],[7,8,9]])
 print("dimensions=",l.ndim)
+
 k=np.array([[1,2,3],[4,5,6],[10,20,30]])
 print(k.ndim)
+
 # b=np.array([[1,2,3]])
 j=np.array([[-3,-2,-1],[0,1,2],[3,4,5]])
 print(j)
 print("dimensions=",j.ndim)
+
 cx=np.array([[[0.5,0.4,0.3],[0.2,0.1,0],[1,2,3]]])
 print(cx**2)
 print("dimensions=",cx.ndim)
 print()
+
 z=np.array([[[0,2,4],[4,6,8],[1,3,5],[7,9,1.1]]])
 print(z*z)
 print("dimensions=",z.ndim)
 print()
+
 s=np.array([[[[0.10,0.9,0.8],[0.7,0.6,0.5],[0.4,0.3,0.2]]]])
 print("dimensions=",s.ndim)
 print()
+
 # c=np.array([[1,2,3],[2,4,5],[3,4,6]]) #### err
 # print(c[1]**2) ### o
 # print(c.dtype) ### r
 f=np.array([["array","versus","lists"]])
 print(f.dtype)
+
 o=np.array([[90,12,3],["strings","data","type"]])
 print(o[0],o[0].dtype)
+
 s=np.array([1,2,3])
 d=np.array([4,5,6])
 print(s/d)
+
 p=np.array(range(5))
 print(p,d.dtype)
-print(
-)
+print()
+
 v=np.array([-3,-2,-1],ndmin=5)
 print(v)
 print(v.ndim)
 print()
+
 f=np.array([[10,20,90,]])
 print(f.ndim)
-print(
+print()
 
-)
 j=np.array([0.14,-9.214,-.94])
 print(j.dtype)
-print(
+print()
 
-)
 x=np.array([[9+2j,2.12,"kg"]])
 print(x.dtype)
 print()
+
 o=np.arange(2,8)
 print(o)
+
 b=np.arange(8,2)
 print(b)
+
 c=np.eye(3)
 print(c)
 print()
+
 # lines_space=np.linspace(1,15,num=2) #### ERR
 # print(lines_space) #### OR
 li=np.linspace(1,15,num=5)
 print(li)
+
 k=np.linspace(0,10,num=5)
 print(k)
-print(
+print()
 
-)
 k=np.arange(2,8)
 print(k)
-print(
+print()
 
-)
 x=np.linspace(5,10,num=8)
 print(x,x.dtype)
 print()
+
 c=np.random.rand(5)
 print(c,print())
+
 s=np.array([[[{"a":"apple","quantity":[1,2,3],"banana":[10,20,30]}]]])
 print(s)
+
 o=np.array([[[1,2,3],[2,4,5],[3,5,6]]])
 print(o)
+
 q=np.array([{"c":"china","b":"byd","j":"japan","t":"toyota"}])
 print(q,q.dtype)
 print(q.ndim)
 print()
+
 # x=np.array([[{"a":"apple"},[{"k":"kilogram"},{"g":"grammer"}]]])
 # print(x)
 i=np.array([[[0.3,0.2,0.1],[-3,-2,-1],[3,2,1]]])
@@ -149,22 +161,20 @@ print(i.dtype)
 
 o=np.linspace(1,5,num=4)
 print(o,o.dtype,o.ndim)
-print(
+print()
 
-)
 byd=np.random.rand(2,5)
 print(byd,byd.ndim)
-print(
+print()
 
-)
 k=np.random.randn(5)
 print(k)
 print()
+
 c=np.random.randn(3)
 print(c)
-print(
+print()
 
-)
 cx=np.random.ranf(4)
 print(cx[0],cx.dtype)
 # a=np.random.randf(2,5)
@@ -174,28 +184,29 @@ e=np.array([1,2,3,4,5])
 c=np.array([10,20,30,40,50])
 j=e**c/5
 print(j)
-print(
+print()
 
-)
 h=np.array([1.23,89.44,8.34,13.1,7.45,8.42])
 w=np.array([5.90,8.14,7.424,78.13,7.13,2.13])
 fat=w/h**2
 print(fat)
 print()
+
 k=np.array([1.32,"is",True])
 print(k,k.dtype)
 print()
+
 t=[1,2,3]
 g=np.array([10,20,30])
 e=t+g
 print(e,e.dtype)
 print(type(e))
+
 j=np.array([[1,9,88,842]])
 print(j,j.dtype)
 print(type(j))
-print(
+print()
 
-)
 
 #####    "2/2/2025"     #############
 # "B.....M.....I"
@@ -205,25 +216,22 @@ f=w**h/2
 print(f)
 print(f>=2)
 print(f[f>5])
-print(
+print()
 
-)
 ch=np.array([1,2,3,4,5])
 cor=np.array([100,90,80,70,60])
 res=ch**cor/2
 print(res)
 print(res>3)
 print(res[res>3])
-print(
+print()
 
-)
 w=np.array([1.994,9.45,8.42,9.23])
 # print(np.shape(5))
 f=w.shape
 print(f)
-print(
+print()
 
-)
 r=np.array([[1,3,5,7],[2,4,6,8]])
 print(r)
 f=r.shape
@@ -808,7 +816,6 @@ print()
 # print(v.ndim,v.shape)
 # c=v.reshape((2,4))
 # print(c)
-# ujjain-chitrkot-pragyaraj-
 # c=np.array([[1,3,5,7],  ###  2-D ARRAY  ###
 #              [2,4,6,8]],
 #
@@ -841,6 +848,7 @@ print(s.ndim)
 # print(x)
 v=s.reshape((6,3),order="C")
 print(v)
+
 z=s.reshape((2,9),order="F")
 print(z)
 print()
